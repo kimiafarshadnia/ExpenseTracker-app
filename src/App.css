@@ -2,37 +2,140 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+label,
+input {
+  cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+p {
+  margin-bottom: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.cardUser {
+  background-image: linear-gradient(
+    to right bottom,
+    #f4ff00,
+    #ffd000,
+    #ff9f24,
+    #ff7049,
+    #ff4665,
+    #ff4799,
+    #f15ccd,
+    #c879fc,
+    #69abff,
+    #00ceff,
+    #00e8ff,
+    #5ffbf1
+  );
+  border: 1px solid #fff;
+  color: #fff;
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+.Bicons {
+  background-color: #ffffffb4;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  text-align: center;
+  color: rgb(0, 187, 0);
+  font-size: 1.4rem;
+}
+
+img,
+svg {
+  vertical-align: unset !important;
+}
+
+.menuBottom {
+  background-color: rgb(255, 255, 255);
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
   align-items: center;
+  width: 100%;
+  border: 1px solid #fff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 25px 25px 0 0;
+}
+
+.btnAdd {
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid;
+  border-radius: 50%;
+  color: #ffff;
+  background-image: linear-gradient(
+    to right bottom,
+    #f4ff00,
+    #ffd000,
+    #ff9f24,
+    #ff7049,
+    #ff4665,
+    #ff4799,
+    #f15ccd,
+    #c879fc,
+    #69abff,
+    #00ceff,
+    #00e8ff,
+    #5ffbf1
+  );
+  position: relative;
+  top: -1rem;
+  font-size: 1.5rem;
+}
+
+.btnCancel {
+  transition: all 0.5s;
+  background-color: red;
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid;
+  border-radius: 50%;
+  color: #ffff;
+  position: relative;
+  top: -1rem;
+  font-size: 1.5rem;
+}
+
+.splitTransaction {
+  border-bottom: 1px solid #ccc;
+}
+
+.avatar {
+  width: 3rem;
+  height: 3rem;
+  background-color: yellow;
+  border-radius: 50%;
+}
+/*modal styles */
+.Modal {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: hsla(0, 0%, 0%, 0.337);
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.modalContent {
+  background-color: #fff;
+  width: 500px;
+  border: 1px solid #fff;
+  border-radius: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.modalFooter,
+.modalHeader {
+  padding: 10px;
+}
+
+.modalBody {
+  padding: 1.5rem;
 }
